@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>test</title>
+    <style>
+      #inp{
+        width: 250px;
+      }
+      .done{
+        text-decoration: line-through;
+      }
+      .save{
+        background-color: none;
+        border: none;
+      }
+      .cont{
+        float: left;  
+        width: calc(100% - 100px);
+        display: block;
+      }
+      .ok{
+        margin: 5px;
+        width: 30px;
+        height: 30px;
+        border-radius: 50%;
+        border: none;
+        
+      }
+      .tbox{
+        display: flex;
+        flex-direction: column;
+      }
+      .ok:first-child{
+        background-color: aquamarine;
+       
+        
+      }
+      .ok:nth-child(2){
+        background-color: rgb(127, 187, 255);
+      }
+      .ok:nth-child(3){
+        background-color: rgb(180, 41, 41);
+      }
+      .button{
+        margin: auto;
+      }
+    </style>
+</head>
+<body>
+    
+    <textarea name="" id="inp" cols="30" rows="10"></textarea>
+    <div class="button">
+      <button id="btadd" class="save">
+        储存
+      </button>
+      <button id="btcleaar" onclick="removeAll()">
+        清空
+      </button>
+    </div>
+    <div class="tbox"></div>
+    
+    <!--顶部内容-->
+    
+    <script src="Script/Save.js"></script>
+    <script src="Script/index.js"></script>
+  </body>
+</html>

@@ -1,0 +1,23 @@
+{
+  "name": "electrondock",
+  "version": "1.0.0",
+  "description": "",
+  "main": "main.js",
+  "scripts": {
+    "start": "electron .",
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "package":"electron-packager . bw --platform=win32 --arch=x64 --icon=ys.ico --out=./out --asar --app-version=1.0.0 --overwrite --ignore=node_modules --download.mirrorOptions.mirror=https://npm.taobao.org/mirrors/electron/"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "electro": "^2.1.1"
+  },
+  "dependencies": {
+    "@electron/remote": "^2.0.9",
+    "electron": "^24.2.0",
+    "electron-packager": "^17.1.1",
+    "install": "^0.13.0"
+  }
+}
